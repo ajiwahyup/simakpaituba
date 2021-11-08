@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap");
+body {
+  background-color: #FFFFFF;
+}
+
+/*========== Universal Settings ==========*/
+.icon {
+  color: #EE143A;
+}
+
+.logo-simakpai {
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem;
+  color: #EE143A;
+}
+
+.caption {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 12px;
+  color: #000;
+}
+
+.card {
+  border: none !important;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+}
+
+.card .card-header {
+  background-color: #FFFFFF;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+}
+
+.card .card-title,
+.card .card-text {
+  font-family: "Helvetica Neue";
+  font-weight: normal;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+}
+
+/*========== .Universal Settings ==========*/
+/*========== Index.html ==========*/
+/*========== Navbar ==========*/
+nav a.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav a.navbar-brand img {
+  width: 1.563rem;
+  height: 2.118rem;
+}
+
+nav .navbar-collapse a {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  color: #707070;
+}
+
+/*========== Header ==========*/
+header .wellcome {
+  margin-top: 5%;
+  overflow-x: hidden;
+}
+
+header .wellcome .wellcome-text {
+  text-align: left;
+}
+
+header .wellcome .wellcome-text h5 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000;
+}
+
+header .wellcome .wellcome-text h1 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: #000;
+}
+
+header .wellcome .wellcome-text h1.caption {
+  color: #ee143a;
+}
+
+header .wellcome .wellcome-text .btn {
+  width: 7.6rem;
+  height: 2.6rem;
+  border-radius: 5px;
+  background: #ee143a;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.16);
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+}
+
+header .wellcome .wellcome-text .btn:hover {
+  background-color: #a00f27;
+}
+
+header .wellcome img {
+  width: 547px;
+  height: 321px;
+}
+
+/*========== Main Content ==========*/
+main #berita {
+  min-height: 70vh;
+  margin-bottom: 2%;
+}
+
+main #berita .left-side {
+  margin-bottom: 2%;
+}
+
+main #berita .right-side {
+  margin-bottom: 2%;
+}
+
+main #berita .right-side a {
+  text-decoration: none;
+}
+
+main #berita .right-side a:hover .card {
+  background: #e2e2e2;
+}
+
+main #berita .right-side .pengumuman-list {
+  min-height: 80px;
+  background: transparent;
+  overflow: hidden;
+  padding: 2%;
+}
+
+main #berita .right-side .pengumuman-list img {
+  width: 100%;
+  height: 3.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+main #berita .right-side .pengumuman-list h5 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+}
+
+/*========== Footer ==========*/
+footer {
+  background-color: #fafafb;
+  padding-top: 2%;
+}
+
+footer h5 {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: left;
+  color: #000;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  padding-bottom: 3%;
+}
+
+/*========== .Index.html ==========*/
+/*========== login.html ==========*/
+.login-page .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFC691;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.login-page .left-side img {
+  width: 653px;
+  height: 391px;
+}
+
+.login-page .right-side {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+.login-page .right-side h1 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+
+.login-page .right-side .login-form .input {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+}
+
+.login-page .right-side .login-form button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFC691;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+}
+
+.login-page .right-side .login-form button:hover {
+  background-color: #eeb077;
+}
+
+.login-page .right-side .login-form p a {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 15px;
+  color: #707070;
+  margin-top: 2%;
+  text-decoration: none;
+}
+
+.login-page .right-side .login-form a:hover {
+  color: #EE143A;
+}
+
+/*========== .login.html ==========*/
+/*========== Media Query ==========*/
+@media (max-width: 480px) {
+  header .wellcome .wellcome-text {
+    text-align: center;
+  }
+  header .wellcome .wellcome-text h5 {
+    font-size: 0.8rem;
+  }
+  header .wellcome .wellcome-text h1 {
+    font-size: 1.2rem;
+  }
+  header .wellcome .wellcome-text .btn {
+    width: 5rem;
+    height: 1.8rem;
+    font-size: 0.8rem;
+  }
+  header .wellcome img {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  /*========== login.html ==========*/
+  .login-page .left-side {
+    display: none;
+  }
+}
+
+/*========== .Media Query ==========*/
+/*# sourceMappingURL=main.css.map */
