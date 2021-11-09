@@ -9,3 +9,7 @@ $(document).ready(function () {
     }
     aos_init()
 })
+
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})

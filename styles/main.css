@@ -273,6 +273,54 @@ footer ul li {
 }
 
 /*========== .login.html ==========*/
+/*========== home.html ==========*/
+header.home h5 {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-size: 20px;
+  color: #000;
+}
+
+header.home h5 span {
+  font-weight: bold;
+}
+
+main .menu-utama-home a {
+  text-decoration: none;
+}
+
+main .menu-utama-home a .card {
+  width: 100%;
+  padding: 2%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main .menu-utama-home a .card img {
+  width: 100px;
+  height: 89.53px;
+}
+
+main .menu-utama-home a .card p {
+  font-family: "Helvetica Neue";
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+main .menu-utama-home a .card:hover {
+  margin-top: -10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+main .menu-utama-home .modal .modal-body img {
+  width: 294px;
+  height: 209px;
+}
+
+/*========== .home.html ==========*/
 /*========== Media Query ==========*/
 @media (max-width: 480px) {
   header .wellcome .wellcome-text {
