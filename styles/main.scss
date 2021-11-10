@@ -348,6 +348,23 @@ main {
 
 /*========== .home.html ==========*/
 
+/*========== daftar_media.html ==========*/
+header {
+    .daftar_media_header {
+        h5 {
+            margin-top: 5%;
+        }
+    }
+}
+
+main {
+    .daftar_media_menu {
+        min-height: 50vh;
+    }
+}
+
+/*========== .daftar_media.html ==========*/
+
 /*========== Media Query ==========*/
 @media (max-width: 480px) {
     header {
