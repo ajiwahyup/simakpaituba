@@ -137,26 +137,31 @@ main #berita .left-side {
   margin-bottom: 2%;
 }
 
-main #berita .right-side {
+main #berita .right-side,
+main #pengumuman .left-side {
   margin-bottom: 2%;
 }
 
-main #berita .right-side a {
+main #berita .right-side a,
+main #pengumuman .left-side a {
   text-decoration: none;
 }
 
-main #berita .right-side a:hover .card {
+main #berita .right-side a:hover .card,
+main #pengumuman .left-side a:hover .card {
   background: #e2e2e2;
 }
 
-main #berita .right-side .pengumuman-list {
+main #berita .right-side .pengumuman-list,
+main #pengumuman .left-side .pengumuman-list {
   min-height: 80px;
   background: transparent;
   overflow: hidden;
   padding: 2%;
 }
 
-main #berita .right-side .pengumuman-list img {
+main #berita .right-side .pengumuman-list img,
+main #pengumuman .left-side .pengumuman-list img {
   width: 100%;
   height: 3.5rem;
   -o-object-fit: cover;
@@ -164,7 +169,8 @@ main #berita .right-side .pengumuman-list img {
   border-radius: 5px;
 }
 
-main #berita .right-side .pengumuman-list h5 {
+main #berita .right-side .pengumuman-list h5,
+main #pengumuman .left-side .pengumuman-list h5 {
   font-family: "Open Sans";
   font-weight: bold;
   font-size: 15px;
@@ -338,6 +344,44 @@ main .daftar_media_menu {
 }
 
 /*========== .daftar_media.html ==========*/
+/*========== pengumuman_detail.html ==========*/
+#pengumuman_detail .card.left-side {
+  padding: 2%;
+}
+
+#pengumuman_detail .card.right-side {
+  padding: 2%;
+  font-family: "Helvetica Neue";
+  color: #000;
+}
+
+#pengumuman_detail .card.right-side a {
+  color: #000;
+  text-decoration: none;
+}
+
+#pengumuman_detail .card.right-side .card {
+  padding: 2%;
+}
+
+#pengumuman_detail .card.right-side .card:hover {
+  background: #e2e2e2;
+}
+
+#pengumuman_detail .card.right-side .card h5 {
+  font-size: 15px;
+}
+
+#pengumuman_detail .card.right-side .card p {
+  font-size: 8px;
+}
+
+#pengumuman_detail .card.right-side .card img {
+  width: 50px;
+  height: 50px;
+}
+
+/*========== .pengumuman_detail.html ==========*/
 /*========== Media Query ==========*/
 @media (max-width: 480px) {
   header .wellcome .wellcome-text {
@@ -356,6 +400,11 @@ main .daftar_media_menu {
   }
   header .wellcome img {
     display: none;
+  }
+  #pengumuman_detail .card.right-side .card img {
+    width: 100%;
+    height: 50px;
+    background-size: cover;
   }
 }
 
