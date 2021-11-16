@@ -29,12 +29,16 @@
                 </div>
 
                 <div class="login-form" data-aos="fade-up">
-                    <form class="login">
-                        <input class="input" type="text" placeholder="username" autofocus />
-                        <!-- <i class="fa fa-user"></i> -->
-                        <input class="input" type="password" placeholder="password" />
-                        <!-- <i class="fa fa-key"></i> -->
-                        <button type="button" onclick="window.location.href='home.html';">Login</button>
+                    <form>
+                        <div class="form-group">
+                            <label for="InputUsername">Username</label>
+                            <input type="text" class="form-control" id="InputUsername">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword">Password</label>
+                            <input type="password" class="form-control" id="InputPassword">
+                        </div>
+                        <button type="submit" onclick="window.location.href='home.html';" class="btn btn-primary">Login</button>
                         <p class="text-center mt-3"><a href="index.html">Beranda</a></p>
                     </form>
                 </div>

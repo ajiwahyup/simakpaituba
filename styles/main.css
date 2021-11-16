@@ -244,23 +244,12 @@ footer ul li {
   color: #000;
 }
 
-.login-page .right-side .login-form .input {
-  margin-bottom: 30px;
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
-}
-
 .login-page .right-side .login-form button {
   width: 100%;
   height: 50px;
   border-radius: 5px;
   border: none;
-  background-color: #FFC691;
+  background-color: #f39338;
   color: #FFFFFF;
   font-family: "Helvetica Neue";
   font-weight: bold;
@@ -269,7 +258,7 @@ footer ul li {
 }
 
 .login-page .right-side .login-form button:hover {
-  background-color: #eeb077;
+  background-color: #fa8314;
 }
 
 .login-page .right-side .login-form p a {
@@ -382,6 +371,20 @@ main .daftar_media_menu {
 }
 
 /*========== .pengumuman_detail.html ==========*/
+/*========== unggah_persyaratan.html ==========*/
+#unggah_persyaratan_main .card-header {
+  border-left: 4px solid #EE143A;
+}
+
+#unggah_persyaratan_main .card-header button {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+/*========== .unggah_persyaratan.html ==========*/
 /*========== Media Query ==========*/
 @media (max-width: 480px) {
   header .wellcome .wellcome-text {

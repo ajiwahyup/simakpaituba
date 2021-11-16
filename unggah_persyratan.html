@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Logo Tubakab.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Simakpai | Sistem Informasi Media Tulang Bawang</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <a class="navbar-brand" href="#">
+            <img class="mr-3 ml-3 mt-2" src="images/Logo Tubakab.png" alt="logo_tubakab">
+            <p class="logo-simakpai">simakpai</p>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto mr-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="daftar_media.html">Daftar Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pengumuman.html">Pengumuman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- .Navbar -->
+
+    <!-- Header -->
+    <header class="home">
+        <div class="container mb-5 mt-3 daftar_media_header" style="border-left: 4px solid #EE143A;">
+            <h5 data-aos="fade-down">Unggah <span>Persyaratan</span></h5>
+        </div>
+    </header>
+    <!-- .Header -->
+
+    <!-- Main -->
+    <main>
+        <div class="container" id="unggah_persyaratan_main">
+            <div class="accordion" id="accordion1">
+                <div class="card mb-3">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Data Media
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion1">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputNamaMedia" class="col-sm-2 col-form-label">Nama Media</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputNamaMedia">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputAlamatUrl" class="col-sm-2 col-form-label">Alamat URL Media</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputAlamatUrl">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="inputEmail">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputKategoriMedia" class="col-sm-2 col-form-label">Kategori
+                                        Media</label>
+                                    <div class="col-sm-10">
+                                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                            <option selected>Choose...</option>
+                                            <option value="1">Media Cetak</option>
+                                            <option value="2">Media Online</option>
+                                            <option value="3">Media Radio</option>
+                                            <option value="4">Media Televisi</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordion2">
+                <div class="card mb-3">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                Data Perusahaan
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion2">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputNamaMedia" class="col-sm-2 col-form-label">Nama Perusahaan</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputNamaMedia">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputAddress" class="col-sm-2 col-form-label">Alamat Perusahaan</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputTel" class="col-sm-2 col-form-label">No.Telepon / HP</label>
+                                    <div class="col-sm-10">
+                                        <input type="tel" class="form-control" id="inputTel">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordion3">
+                <div class="card mb-3">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                Data Legalitas
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                        data-parent="#accordion3">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputNamaPimpinan" class="col-sm-2 col-form-label">Nama Pimpinan</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputNamaPimpinan">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputKTPPimpinan" class="col-sm-2 col-form-label">Nomor KTP
+                                        Pimpinan</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputKTPPimpinan">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputTDP" class="col-sm-2 col-form-label">TDP</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputTDP">
+                                        <small id="TDPHelpBlock" class="form-text text-muted">
+                                            Tanda Daftar Perusahaan
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputKBLUI" class="col-sm-2 col-form-label">KBLUI</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputKBLUI">
+                                        <small id="KBLUIHelpBlock" class="form-text text-muted">
+                                            Klasifikasi Baku Lapangan Usaha Indonesia
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputNPWP" class="col-sm-2 col-form-label">NPWP</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="inputNPWP">
+                                        <small id="NPWPHelpBlock" class="form-text text-muted">
+                                            Nomor Pokok Wajib Pajak
+                                        </small>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordion4">
+                <div class="card mb-3">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                Lampiran
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                        data-parent="#accordion4">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Kartu Identitas PIC</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="filePIC" required>
+                                            <label class="custom-file-label" for="filePIC">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">SK / Surat Tugas Penunjukan PIC</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileSK" required>
+                                            <label class="custom-file-label" for="fileSK">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Surat Permohonan Kerjasama</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileSPK" required>
+                                            <label class="custom-file-label" for="fileSPK">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Proposal Penawaran</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileProposal" required>
+                                            <label class="custom-file-label" for="fileProposal">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">SIUP/SITU/Izin Usaha</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileProposal" required>
+                                            <label class="custom-file-label" for="fileProposal">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">NPWP Media</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileNPWP" required>
+                                            <label class="custom-file-label" for="fileNPWP">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Sertifikat Kemenkumham</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileSertKem" required>
+                                            <label class="custom-file-label" for="fileSertKem">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Kartu Identitas UKW</label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileUKW" required>
+                                            <label class="custom-file-label" for="fileUKW">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Kartu Identitas Pimpinan Perusahaan dan
+                                        Wartawan terdaftar (KTP) </label>
+                                    <div class="col-sm-10">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="fileKartuIdentitas" required>
+                                            <label class="custom-file-label" for="fileKartuIdentitas">Choose file...</label>
+                                        </div>
+                                        <small class="form-text text-muted">Upload berkas dalam format .pdf</small>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- .Main -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="footer">
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-4 col-sm-12">
+                    <p class="logo-simakpai">simakpai</p>
+                    <p class="caption">Kerjasama yang baik dengan Media Massa sangat diharapkan oleh Pemerintah
+                        Kabupaten Tulang Bawang,
+                        dan dapat dioptimalkan jauh lebih baik lagi melalui teknologi informasi.</p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <h5 class="mb-3 mt-3">Powered by :</h5>
+                    <ul>
+                        <li class="caption"><img src="images/Logo Tubakab.png" alt=""> Kabupaten Tulang Bawang</li>
+                        <li class="caption"><img src="images/kominfo-logo-icon.png" alt=""> Dinas Komunikasi dan
+                            Informatika</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <h5 class="mb-3 mt-3">Contact Us</h5>
+                    <ul>
+                        <li class="caption"><i class="fas fa-phone-square"></i> 0XXX-XXXX-XXXX</li>
+                        <li class="caption"><i class="fas fa-envelope"></i> xxxxxxx@xxxxxx.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="caption">ⓒ 2021 Simakpai Tuba | All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- .Footer -->
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+    <script src="libraries/retina/retina.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="scripts/main.js"></script>
+    <!-- .Script -->
+</body>
+
+</html>
